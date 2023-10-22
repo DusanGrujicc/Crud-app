@@ -12,6 +12,11 @@ function App() {
     <div className="App">
       <h1>Task List</h1>
       <CustomForm addTask={addTask} />
+      <ul>
+        {tasks.map((task, index) => (
+          <li key={index}>{task}</li>
+        ))}
+      </ul>
     </div>
   );
 }
